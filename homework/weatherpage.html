@@ -2,28 +2,38 @@
 <html lang="en">
 
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Visitor Analysis and Persona</title>
+        <meta charset="UTF-8">
+        <title>Demo Weather Page</title>
+        <link rel="stylesheet" type="text/css" href="html-css.css" media="screen">
         <meta name="viewport" content="width=device-width">
     </head>
 
-<body>
+    <body>
+        <div id="wrapper">
+            <header id="page-header">
+                <p>Weather</p>
+                <form id="page-search">
+                    <input id="search-box" type="search" placeholder="Search by city, zipcode" name="q">
+                    <input type="submit" name="submit">
+                </form>
+            </header>
+            <nav id="page-nav"></nav>
     <main>
-    <h1>Franklin, ID</h1>
-<ul>
-    <li>High:
-        <br>90°<sup>F</sup></li>
-    <figure><img alt="sun" src="/images/rsz_big-sun-clipart.jpg"></figure>
-    <li>Low:
-        <br>66°<sup>F</sup></li>
-    <li>Precipitation<br>
-        0%</li>
-    <li>Wind Speed<br>
-        1 - 5 mph</li>
-    <li>Wind Direction<br>
-        SW</li>
-</ul>
+
+    <h1>Franklin, IL</h1>
+    <ul id="hi-lo">
+        <li>High:<br>90&deg;<sup>F</sup></li>
+        <li id="conditions"><img src="/images/rsz_big-sun-clipart.jpg" alt="sunny"><br>Sunny</li>
+        <li>Low:<br>66&deg;<sup>F</sup></li>
+    </ul>
+    <ul>
+        <li><strong>Precipitation:</strong><br>
+            0%</li>
+        <li><strong>Wind:</strong><br>
+            1 - 5</li>
+        <li><strong>Direction:</strong><br>
+            SW</li>
+    </ul>
     </main>
     <footer>
         <ul>
@@ -39,4 +49,6 @@
         </ul>
         <p> </p>
     </footer>
+        </div>
     </body>
+</html>
