@@ -72,6 +72,10 @@ main h2{
   margin: .1em;
 }
 
+#hourly {
+    display: none;
+}
+
 @media only screen and (min-width: 480px) {
     #wrapper {
         width: 70%;
