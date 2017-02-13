@@ -72,8 +72,29 @@ main h2{
   margin: .1em;
 }
 
-/*Medium Screen*/
-@media screen and (min-width: 768px){}
+@media only screen and (min-width: 480px) {
+    #wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #hourly {
+        display: block;
+    }
+    #hourly>p {
+        display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 50%;
+    }
+}
 
-/*Large Screen*/
-@media screen and (min-width: 1024px ){}
+@media only screen and (min-width: 768px) {
+    nav {
+        display: inline-block;
+        width: 20%;
+    }
+    main {
+        display: inline-block;
+        width: 58%;
+    }
+}
