@@ -230,7 +230,7 @@ h1 {
     .page-header {
         margin: 0;
         width: 100%;
-        background-image: url(/homework/responsive_media/images/nps-logo_150.png), url(/homework/responsive_media/images/bridge_1200.jpg);
+        background-image: url(/homework/responsive_media/images/nps-logo_150.png), url(/homework/responsive_media/images/bridge_1200.jpg)
         background-repeat: no-repeat, no-repeat;
         background-position: right, center;}
     .page-nav li {
