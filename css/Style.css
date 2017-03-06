@@ -1,34 +1,197 @@
-* {
-    box-sizing: border-box;
-}
+/********************************
+* Default Styles - Mobile First
+********************************/
 
-*:before,
-*:after{
-    box-sizing: border-box
-}
-
-body{
-    background-color: red;
+body {
+    font-family: sans-serif;
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    font-size: 1em;
-    font-family: arial "arial thin"
 }
-#wrapper{
-    background-color: #fff;
+
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    padding: .5em;
+}
+
+h1 {
+    font-size: 1.05em;
+    /*	line-height: 1.25;*/
+}
+
+
+
+/*	Background Images - Small screens */
+
+.page-header {
+    margin: 0;
     width: 100%;
+    background-image: url(/homework/responsive_media/images/nps-logo_50.png), url(/homework/responsive_media/images/bridge_400.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, center;
 }
 
-#hi-lo{
+.page-nav {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.page-nav ul {
+    display: flex;
+    align-items: stretch;
+    height: 2.5em;
+    margin: 0;
+    padding: 0;
     list-style: none;
-
-}
-#hi-lo>li{
-    display: inline-block;
-    width: 25%;
 }
 
-#hi-lo #conditions{
-    width: 50%;
+.page-nav li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 auto;
+    position: relative;
+}
+
+.featured-image {
+    margin: 1em 0;
+}
+
+.featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-caption {
+    padding: .25em 1em;
+    font-family: serif;
+    font-size: 80%;
+    background: rgba(0, 0, 0, .1);
+}
+
+.featured-video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.page-footer {
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 0 .5em;
+    margin-bottom: 2.5em;
+}
+
+.page-footer ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-footer li {
+    flex: auto;
+}
+
+.page-footer p {
+    margin: 0;
+}
+
+.credits {
+    font-size: .8em;
+}
+
+
+@media (min-width: 41.67em) {
+    body {
+        font-size: 1.25em;
+    }
+    h1 {
+        font-size: 2em;
+        line-height: 1.125;
+    }
+    /*	Background Images - Use with medium screens */
+    .page-header {
+        margin: 0;
+        width: 100%;
+        background-image: url(/homework/responsive_media/images/nps-logo_100.png), url(/homework/responsive_media/images/bridge_800.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right, center;
+    }
+    .page-nav {
+        position: relative;
+    }
+    .page-nav li {
+        flex: 0 1 20%;
+    }
+    .main {
+        line-height: 1.375;
+    }
+    .featured-image {
+        margin: 0 1em 1em 0;
+        float: left;
+        width: 50%;
+    }
+    .featured-video {
+        float: left;
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        margin: 0 1em 1em 0;
+    }
+    .featured-video+p {
+        clear: both;
+    }
+    .page-footer {
+        margin-bottom: .5em;
+    }
+}
+
+@media (min-width: 66.7em) {
+    body {
+        font-size: 1.5vw;
+    }
+    h1 {
+        font-size: 3em;
+        line-height: 1.05;
+    }
+    /*	Background Images - Use with large screens */
+    .page-header {
+        margin: 0;
+        width: 100%;
+        background-image: url(/homework/responsive_media/images/nps-logo_150.png), url(/homework/responsive_media/images/bridge_1200.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right, center;
+    }
+    .page-nav li {
+        flex: 0 1 10%;
+    }
+    .main {
+        max-width: 80%;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
 }
