@@ -67,6 +67,11 @@ h1{
   width: 49%;
 }
 
+#current{
+    display: inline-block;
+    text-align: center;
+}
+
 main h2{
   text-align: center;
   margin: .1em;
