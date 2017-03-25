@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Search Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/html-style-css.css" media="screen">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Kelton Barr
+* 2. Joel Jossie
+* ******************************************** -->
+
+<body>
+    <div id="wrapper">
+        <header id="pageHeader">
+            <nav>
+                <ul id="locations">
+                    <li><a href="weatherapi.html" title="Current Weather Home">Current Weather Home</a></li>
+                    <li><a href="/homework/franklinweatherpage.html">Franklin Weather Page</a></li>
+                    <li><a href="/homework/greenvilleweatherpage.html">Greenville Weather Page</a></li>
+                    <li>Springfield Weather Page</li>
+                </ul>
+            </nav>
+            <ul id="cities">
+                <li>
+                    <h1 id="cityDisplay">Current Location</h1></li>
+            </ul>
+
+
+        </header>
+        <main>
+            <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+                <input type="search" name="myQuery" id="myQuery">
+                <input type="submit" name="submit" value="Search" id="send">
+            </form>
+
+            <section id="sResults">
+
+            </section>
+            <button id="toggleButton">
+                (click here to show results)</button>
+
+            <ul id="temps">
+                <li id="currentTemp">Loading...</li>
+                <li>High &deg;<sup>F</sup>
+                    <br>Low &deg;<sup>F</sup></li>
+            </ul>
+            <ul id="conditions">
+                <li class="precip add1">Precipitation...</li>
+            </ul>
+            <ul id="wind">
+                <li id="add2">Wind Speed...</li>
+                <li id="add3">Direction...</li>
+
+            </ul>
+            <ul id="location">
+                <li id="longitude">Longitude...</li>
+                <li id="latitude">Latitude...</li>
+                <li id="zip">Zip...</li>
+            </ul>
+
+
+            <h3 id="hourlyTemps">Hourly Temperatures</h3>
+            <div id="hourly">
+                <ul id="hourlytemp">
+                    <p>12:00AM - 67&deg;</p>
+                    <p>1:00AM - 67&deg;</p>
+                    <p>2:00AM - 69&deg;</p>
+                    <p>3:00AM - 69&deg;</p>
+                    <p>4:00AM - 69&deg;</p>
+                    <p>5:00AM - 70&deg;</p>
+                    <p>6:00AM - 69&deg;</p>
+                    <p>7:00AM - 72&deg;</p>
+                    <p>8:00AM - 74&deg;</p>
+                    <p>9:00AM - 77&deg;</p>
+                    <p>10:00AM - 79&deg;</p>
+                    <p>11:00AM - 81&deg;</p>
+                    <p>12:00PM - 84&deg;</p>
+                    <p>1:00PM - 86&deg;</p>
+                    <p>2:00PM - 88&deg;</p>
+                    <p>3:00PM - 90&deg;</p>
+                    <p>4:00PM - 90&deg;</p>
+                    <p>5:00PM - 85&deg;</p>
+                    <p>6:00PM - 83&deg;</p>
+                    <p>7:00PM - 79&deg;</p>
+                    <p>8:00PM - 74&deg;</p>
+                    <p>9:00PM - 70&deg;</p>
+                    <p>10:00PM - 68&deg;</p>
+                    <p>11:00PM - 66&deg;</p>
+                </ul>
+            </div>
+            <p>Longitude: -111.803757
+                <br>Latitude: 42.011902</p>
+        </main>
+        <footer id="pagefooter">
+            &copy; 2017, index
+            <br> Kelton barr
+        </footer>
+    </div>
+    <script src="/js/jsonweather-html/scripts/search.js">
+    </script>
+</body>
+
+</html>
