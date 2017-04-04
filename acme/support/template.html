@@ -1,89 +1,41 @@
-<!doctype html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ACME Final Project</title>
-    <link href="/acme/css/acme-css.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="/acme/js/code.js"></script>
-</head>
-
-<body id="body">
-    <div class="container">
-        <header> </header>
-        <div class="primary_header">
-            <img id="logo" src="/acme/images/site/logo.png" alt="logo for the site">
-        </div>
-        <nav id="nav" class="secondary_header">
-        </nav>
-        <main id="page">
-
-            <section id="home">
-                <h1>Welcome to Acme</h1>
-                <section id="rocket">
-                    <ul class=a cme-list>
-                        <li>
-                            <h2>Acme Rocket</h2></li>
-                        <li>Quick lighting fuse</li>
-                        <li>NHTSA approved seat belts</li>
-                        <li>Mobile launch stand included</li>
-                        <li>
-                            <a href="#"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a>
-                        </li>
-                    </ul>
-                </section>
-                <article class="left_article">
-                    <div id="other-content-2">
-                        <div id="reviews">
-                            <br>
-                            <h1>Welcome to acme | Acme Rocket Reviews</h1>
-                            <ul>
-                                <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
-                                <li>"That thing was fast!" (4/5)</li>
-                                <li>"Talk about fast delivery." (5/5)</li>
-                                <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
-                                <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-                <aside class="right_article">
-
-                    <div><img src="/acme/images/site/feature.jpg" alt="" width="400" height="200" class="placeholder" /> </div>
-                </aside>
-                <div class="row blockDisplay">
-                    <div id="other-content">
-                        <div id="recipes">
-                            <h3>Featured Recipes</h3>
-                            <ul class="left_article" id="recipe-content">
-                                <li><img src="/acme/images/recipes/bbqsand.jpg" alt="Pulled Roadrunner BBQ Sandwich">Pulled Roadrunner BBQ</li>
-                                <li><img src="/acme/images/recipes/potpie.jpg" alt="Roadrunner Pot Pie">Roadrunner Pot Pie</li>
-                                <li> <img src="/acme/images/recipes/soup.jpg" alt="Roadrunner soup">Roadrunner Soup</li>
-                                <li><img src="/acme/images/recipes/taco.jpg" alt="Roadrunner Tacos">Roadrunner Tacos</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <section id="content">
-                    <h1 id="name"></h1>
-                    <section id="product_img"></section>
-                    <p id="price"></p>
-                    <p id="description"></p>
-                    <p id="manufacturer"></p>
-                    <p id="reviews"></p>
-                </section>
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ACME</title>
+        <meta name="viewport" content="width=device-width">
+        <link href='/acme/css/acme-css.css' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <main>
+            <header id="page-header">
+                <script src="/acme/js/acme.js"></script>
+            </header>
+            <nav id="page-nav">
+                <noscript id="ns">Please enable JavaScript for this site to function.</noscript>
+                <ul>
+                    <li><a href="#" title="Home">Home</a></li>
+                </ul>
+            </nav>
+            <section id="home-content">
+                <h1>Welcome to Acme!</h1>
             </section>
-        </main>
-        <footer id="pagefooter">
-            &copy; 2017, index
-            <br> Kelton barr
-        </footer>
-    </div>
-</body>
+            <section id="product-content">
+                <h1>Product Page</h1>
+            </section>
+            <footer>
+                <section id="page-footer">
+                    <hr>
+                    <section class="copyright">
+                        <p>&copy; ACME, All rights reserved.</p>
+                        <p>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
+                    </section>
 
+                </section>
+            </footer>
+        </main>
+    </body>
 </html>
