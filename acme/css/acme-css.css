@@ -31,13 +31,11 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 950px;
-    /*    height: 400px;*/
     color: #990033;
     display: flex;
     justify-content: flex-end;
 }
 .pic img {
-    /*    height: auto;*/
     max-width: 227px;
 }
 
@@ -217,21 +215,6 @@ noscript {
     color: #fff;
 }
 
-}
-.placeholder {
-    /* [disabled]max-width: 400px;
-    */
-    /* [disabled]max-height: 200px;
-    */
-
-    width: 100%;
-    padding-top: 30px;
-    /* [disabled]padding-left: 19px;
-    */
-
-    padding-bottom: 30px;
-    height: 100%;
-}
 .column_title {
     padding-top: 25px;
     padding-bottom: 25px;
